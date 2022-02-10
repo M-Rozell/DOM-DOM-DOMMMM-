@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
         'black',
         'purple'
     ];
+
     button.addEventListener('click', function () {
+
         let div = document.createElement('div');
         document.body.appendChild(div);
         div.id = divCounter;
@@ -30,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             })
             div.addEventListener("dblclick", idCheck);
-
         })
+
         function idCheck() {
             if (div.id % 2 === 0) {
                 if (div.nextElementSibling === null) {

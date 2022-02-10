@@ -1,5 +1,4 @@
 button{
-    
     position: absolute;
     cursor: pointer;
 }    
@@ -16,8 +15,7 @@ button{
     float: left;
     text-align: center;
     align-items: center;
-    
-    
+    user-select: none;
 }
 
     
