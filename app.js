@@ -33,22 +33,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
         function idCheck() {
-
             if (div.id % 2 === 0) {
-                if (div.nextSibling === null) {
+                if (div.nextElementSibling === null) {
                     alert("No box!!!!");
-                } div.nextSibling.remove();
-
-            }
-            else if (div.id % 2 !== 0) {
-                if (div.previousSibling === button) {
-                    alert("No box!!!!");
-                } div.previousSibling.remove();
-
+                } else {
+                    div.nextElementSibling.remove();
+                };
+            } else {
+                if (div.id % 2 !== 0) {
+                    if (div.previousElementSibling === button) {
+                        alert("No box!!!!");
+                    } else {
+                        div.previousElementSibling.remove();
+                    }
+                }
             }
         }
-    })
-
+    });
 });
+
+
+
 
 

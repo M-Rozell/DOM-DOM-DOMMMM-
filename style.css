@@ -1,18 +1,23 @@
 button{
+    
     position: absolute;
     cursor: pointer;
 }    
 
 
 .squareOne {
-    float: left;
     cursor: pointer;
     height: 100px;
     width: 100px;
     background-color: black;
     margin: 2em;
     color: white;
+    line-height: 6em;
+    float: left;
     text-align: center;
+    align-items: center;
+    
+    
 }
 
     
